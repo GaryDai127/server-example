@@ -9,6 +9,18 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TestServlet extends HttpServlet {
 
+	@Override
+	public void destroy() {
+		System.out.println("destroy method");
+		super.destroy();
+	}
+
+	@Override
+	public void init() throws ServletException {
+		System.out.println("init method");
+		super.init();
+	}
+
 	/**
 	 * 
 	 */
@@ -29,5 +41,6 @@ public class TestServlet extends HttpServlet {
 		pw.print("/hello");
 		pw.close();
 	}
-
+	
+	
 }
