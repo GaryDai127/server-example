@@ -38,4 +38,13 @@
 		<servlet-name>ServletConfigServlet</servlet-name>
 		<url-pattern>/Servlet/ServletConfig</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletContextServlet</servlet-name>
+		<servlet-class>com.netease.server.example.web.controller.ServletContextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContextServlet</servlet-name>
+		<url-pattern>/Servlet/ServletContext</url-pattern>
+	</servlet-mapping>
 </web-app>
