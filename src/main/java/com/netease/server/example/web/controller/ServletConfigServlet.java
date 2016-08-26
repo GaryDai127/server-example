@@ -3,6 +3,7 @@ package com.netease.server.example.web.controller;
 import java.io.IOException;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +19,11 @@ public class ServletConfigServlet extends HttpServlet{
 		String v1 = config.getInitParameter("data1");
 		String v2 = config.getInitParameter("data2");
 		System.out.println("v1:" + v1 + ", v2:" + v2 + ".");
+		
+		ServletContext ctx = this.getServletContext();
+		String g1 = ctx.getInitParameter("globalData1");
+		String g2 = ctx.getInitParameter("globalData2");
+		System.out.println("g1:" + g1 + ", g2:" + g2);
 	}
 
 	@Override
