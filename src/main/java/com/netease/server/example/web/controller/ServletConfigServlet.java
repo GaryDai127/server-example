@@ -24,6 +24,8 @@ public class ServletConfigServlet extends HttpServlet{
 		String g1 = ctx.getInitParameter("globalData1");
 		String g2 = ctx.getInitParameter("globalData2");
 		System.out.println("g1:" + g1 + ", g2:" + g2);
+		
+		ctx.setAttribute("globalData1", 222);
 	}
 
 	@Override
