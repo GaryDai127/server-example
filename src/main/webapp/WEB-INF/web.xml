@@ -11,4 +11,21 @@
 		<servlet-name>TestServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<init-param>
+			<param-name>data1</param-name>
+			<param-value>value1</param-value>
+		</init-param>
+		<init-param>
+			<param-name>data2</param-name>
+			<param-value>value2</param-value>
+		</init-param>
+		<servlet-name>ServletConfigServlet</servlet-name>
+		<servlet-class>com.netease.server.example.web.controller.ServletConfigServlet</servlet-class>		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigServlet</servlet-name>
+		<url-pattern>/Servlet/ServletConfig</url-pattern>
+	</servlet-mapping>
 </web-app>

@@ -17,3 +17,10 @@
 
 * /user页面目前由后端servlet直接输出html生成；
 * dao目前未连接数据库，用户信息代码中写死；
+
+## 2016-08-26  Add by Gary
+## test Servlet/ServletConfig
+    ﻿    ﻿1.使用$CATALINA_HOME/bin/catalina.sh run 开启tomcat
+    ﻿    ﻿2.在eclipse项目右键 run as-> run application -> maven   mvn tomcat7:redeploy   注意看deploy是FAIL还是OK。
+    ﻿    ﻿3.开shell用curl测试。
+     ﻿	4.出错的地方：init-param中 param-value标签写错。
